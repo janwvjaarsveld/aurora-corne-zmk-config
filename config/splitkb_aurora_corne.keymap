@@ -36,7 +36,7 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
             //                    | ALT | GUI | SPC |   | SHFT| RET  | ESC |
@@ -52,23 +52,23 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
-            // | BTCLR|     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+            // |      |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            //                    | GUI |     | SPC |   | ENT | DEL | ALT |
 
             label = "Lower";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5      &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp DELETE
-&trans  &trans  &trans  &none   &kp END  &kp HOME    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &none   &none   &none   &none    &none       &none     &none     &trans  &trans     &trans  &trans
-                        &trans  &trans   &trans      &trans    &trans    &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5      &kp N6    &kp N7     &kp N8  &kp N9     &kp N0  &kp BSPC
+&trans  &trans  &trans  &none   &kp END  &kp HOME    &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &trans  &trans
+&trans  &none   &none   &none   &none    &none       &none     &none      &trans  &trans     &trans  &trans
+                        &trans  &trans   &trans      &trans    &kp DELETE &trans
             >;
         };
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |  <  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     | PRV |NEXT |PLAY |  >  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
