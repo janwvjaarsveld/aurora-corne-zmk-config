@@ -52,26 +52,26 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // |      |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT | DEL | ALT |
+            // |  TAB |  1  |  2  |  3  |  4   |  5  |   |  6  |  7  |  8   |  9  |  0  | BSPC |
+            // |      |     |     |     |      |     |   | LFT | DWN |  UP  | RGT |     |      |
+            // | SHFT |     |     |     | HOME | END |   |     |     |      |     |     |      |
+            //                    | GUI |      | SPC |   | ENT | DEL | ALT  |
 
             label = "Lower";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5      &kp N6    &kp N7     &kp N8  &kp N9     &kp N0  &kp BSPC
-&trans  &trans  &trans  &none   &kp END  &kp HOME    &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &trans  &trans
-&trans  &none   &none   &none   &none    &none       &none     &none      &trans  &trans     &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5      &kp N6    &kp N7     &kp N8    &kp N9     &kp N0  &kp BSPC
+&trans  &trans  &trans  &none   &kp HOME  &kp END    &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans  &trans
+&trans  &none   &none   &none   &kp PG_DN &kp PG_UP  &none     &none      &trans    &trans     &trans  &trans
                         &trans  &trans   &trans      &trans    &kp DELETE &trans
             >;
         };
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |  <  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     | PRV |NEXT |PLAY |  >  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |  TAB |  !  |  @   |  #      |  $     |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+            // | CTRL |     | MUTE | VOL_DWN | VOL_UP |  <  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |  PRV |   NEXT  | PLAY   |  >  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                     |   GUI   |        | SPC |   | ENT |     | ALT |
 
             label = "Raise";
             bindings = <
