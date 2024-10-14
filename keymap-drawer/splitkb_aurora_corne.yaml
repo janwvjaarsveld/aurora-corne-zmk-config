@@ -98,8 +98,8 @@ layers:
   - '*'
   - <
   - '>'
+  - BSPC
   - DELETE
-  - {t: ▽, type: trans}
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
