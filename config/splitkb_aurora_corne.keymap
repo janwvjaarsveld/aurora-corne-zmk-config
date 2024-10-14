@@ -77,19 +77,19 @@
          raise_layer {
              label = "Raise";
              bindings = <
-//    ┌─────┬──────┬──────┬──────┬─────┬─────┐               ┌─────┬─────┬───┬───┬───┬─────┐
-//    │  =  │  !   │  @   │  #   │  $  │  %  │               │  ^  │  &  │ * │ < │ > │ del │
-//    ├─────┼──────┼──────┼──────┼─────┼─────┤               ├─────┼─────┼───┼───┼───┼─────┤
-//    │     │ mute │ vold │ volu │  [  │  (  │               │  )  │  ]  │ - │ + │ \ │  `  │
-//    ├─────┼──────┼──────┼──────┼─────┼─────┤               ├─────┼─────┼───┼───┼───┼─────┤
-//    │     │ prev │ next │ play │  <  │  {  │               │  }  │  >  │ _ │ ? │ | │  ~  │
-//    └─────┴──────┴──────┴──────┼─────┼─────┼─────┐   ┌─────┼─────┼─────┼───┴───┴───┴─────┘
+//    ┌─────┬──────┬──────┬──────┬─────┬─────┐               ┌─────┬─────┬───┬───┬───┬──────┐
+//    │  =  │  !   │  @   │  #   │  $  │  %  │               │  ^  │  &  │ * │ < │ > │ bspc │
+//    ├─────┼──────┼──────┼──────┼─────┼─────┤               ├─────┼─────┼───┼───┼───┼──────┤
+//    │ del │ mute │ vold │ volu │  [  │  (  │               │  )  │  ]  │ - │ + │ \ │  `   │
+//    ├─────┼──────┼──────┼──────┼─────┼─────┤               ├─────┼─────┼───┼───┼───┼──────┤
+//    │     │ prev │ next │ play │  <  │  {  │               │  }  │  >  │ _ │ ? │ | │  ~   │
+//    └─────┴──────┴──────┴──────┼─────┼─────┼─────┐   ┌─────┼─────┼─────┼───┴───┴───┴──────┘
 //                               │     │     │     │   │     │     │     │
 //                               └─────┴─────┴─────┘   └─────┴─────┴─────┘
-  &kp EQUAL   &kp EXCL     &kp AT              &kp HASH          &kp DLLR   &kp PRCNT                         &kp CARET   &kp AMPS   &kp ASTERISK     &kp LT         &kp GT     &kp DELETE
-  &trans      &kp C_MUTE   &kp C_VOLUME_DOWN   &kp C_VOLUME_UP   &kp LBKT   &kp LPAR                          &kp RPAR    &kp RBKT   &kp MINUS        &kp PLUS       &kp BSLH   &kp GRAVE
-  &trans      &kp C_PREV   &kp C_NEXT          &kp C_PP          &kp LT     &kp LBRC                          &kp RBRC    &kp GT     &kp UNDERSCORE   &kp QUESTION   &kp PIPE   &kp TILDE
-                                                                 &trans     &trans      &trans       &trans   &trans      &trans
+  &kp EQUAL    &kp EXCL     &kp AT              &kp HASH          &kp DLLR   &kp PRCNT                         &kp CARET   &kp AMPS   &kp ASTERISK     &kp LT         &kp GT     &kp BSPC
+  &kp DELETE   &kp C_MUTE   &kp C_VOLUME_DOWN   &kp C_VOLUME_UP   &kp LBKT   &kp LPAR                          &kp RPAR    &kp RBKT   &kp MINUS        &kp PLUS       &kp BSLH   &kp GRAVE
+  &trans       &kp C_PREV   &kp C_NEXT          &kp C_PP          &kp LT     &kp LBRC                          &kp RBRC    &kp GT     &kp UNDERSCORE   &kp QUESTION   &kp PIPE   &kp TILDE
+                                                                  &trans     &trans      &trans       &trans   &trans      &trans
              >;
          };
     };
