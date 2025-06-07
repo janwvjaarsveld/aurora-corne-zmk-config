@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: splitkb_aurora_corne}
 layers:
-  default:
+  Base:
   - ESC
   - Q
   - W
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - BSPC
-  - {t: TAB, h: lower}
+  - {t: TAB, h: Lower}
   - A
   - S
   - D
@@ -38,12 +38,12 @@ layers:
   - /
   - RSHFT
   - LALT
-  - Gui+ SPACE
+  - {t: Gui+SPACE, h: Bluetooth}
   - {t: SPACE, h: LGUI}
   - {t: RET, h: LSHFT}
-  - raise
+  - Raise
   - ESC
-  lower:
+  Lower:
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  Raise:
   - '='
   - '!'
   - '@'
@@ -129,7 +129,50 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+  Bluetooth:
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT NEXT
+  - BT PREV
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [11, 24]
   k: DELETE
-  l: [default]
+  l: [Base]
